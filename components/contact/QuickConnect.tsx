@@ -64,16 +64,30 @@ export function QuickConnect() {
 
             <ConnectCard
                 title="Instagram"
-                hint="@xperience.proydrs"
+                hint="@dnii_d"
                 icon={Instagram}
-                onClick={() => openLink('https://www.instagram.com/xperience.proydrs/', 'Instagram')}
+                onClick={() => openLink('https://www.instagram.com/dnii_d/', 'Instagram')}
             />
 
             <ConnectCard
                 title="Facebook"
+                hint="dnii.dnii.0412"
+                icon={Facebook}
+                onClick={() => openLink('https://www.facebook.com/dnii.dnii.0412', 'Facebook')}
+            />
+
+            <ConnectCard
+                title="Xperience Pro (IG)"
+                hint="@xperience.proydrs"
+                icon={Instagram}
+                onClick={() => openLink('https://www.instagram.com/xperience.proydrs/', 'Xperience Pro Instagram')}
+            />
+
+            <ConnectCard
+                title="Xperience Pro (FB)"
                 hint="Xperience Pro"
                 icon={Facebook}
-                onClick={() => openLink('https://www.facebook.com/profile.php?id=61578833769304', 'Facebook')}
+                onClick={() => openLink('https://www.facebook.com/profile.php?id=61578833769304', 'Xperience Pro Facebook')}
             />
 
             {/* Book a Call - only show if booking URL is configured */}

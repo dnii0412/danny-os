@@ -27,12 +27,24 @@ export function ContactLinks({ className }: ContactLinksProps) {
     {
       icon: Instagram,
       label: "Instagram",
+      value: "@dnii_d",
+      href: "https://www.instagram.com/dnii_d/",
+    },
+    {
+      icon: Facebook,
+      label: "Facebook",
+      value: "dnii.dnii.0412",
+      href: "https://www.facebook.com/dnii.dnii.0412",
+    },
+    {
+      icon: Instagram,
+      label: "Xperience Pro (IG)",
       value: "@xperience.proydrs",
       href: "https://www.instagram.com/xperience.proydrs/",
     },
     {
       icon: Facebook,
-      label: "Facebook",
+      label: "Xperience Pro (FB)",
       value: "Xperience Pro",
       href: "https://www.facebook.com/profile.php?id=61578833769304",
     },

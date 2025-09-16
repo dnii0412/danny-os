@@ -11,13 +11,15 @@ export const commands: CommandSpec[] = [
                     clear: 'Clear the terminal screen',
                     help: 'Show this help message',
                     about: 'Open system information page',
-                    contact: 'Open contact page',
+                    contact: 'Contact options (email, phone, social media)',
                     resume: 'Open resume page',
                     apps: 'Open applications page',
                     applications: 'Open applications page',
                     projects: 'Open projects page',
                     dannyexperience: 'Show developer experience',
                     pmexperience: 'Show project management experience',
+                    welcome: 'Show welcome message',
+                    system: 'Show system information',
                     theme: 'Change theme (moss, graphite, linen, ivory)',
                     open: 'Open external links',
                     goto: 'Navigate to a page'
@@ -43,6 +45,8 @@ export const commands: CommandSpec[] = [
               <div><span class="text-blue-400">projects</span> - Projects</div>
               <div><span class="text-blue-400">dannyExperience()</span> - Dev skills</div>
               <div><span class="text-blue-400">pmExperience()</span> - PM dashboard</div>
+              <div><span class="text-blue-400">welcome</span> - Welcome message</div>
+              <div><span class="text-blue-400">system</span> - System info</div>
               <div><span class="text-blue-400">theme</span> - Change theme</div>
               <div><span class="text-blue-400">open</span> - Open links</div>
               <div><span class="text-blue-400">goto</span> - Navigate</div>
@@ -98,6 +102,10 @@ export const commands: CommandSpec[] = [
                 sunrisemongolia: 'https://sunrisemongolia.com',
                 xperience: 'https://experience.mn',
                 instagram: 'https://www.instagram.com/dnii_d/',
+                'xp-ig': 'https://www.instagram.com/xperience.proydrs/',
+                'xp-fb': 'https://www.facebook.com/profile.php?id=61578833769304',
+                facebook: 'https://www.facebook.com/dnii.dnii.0412',
+                github: 'https://github.com/dnii0412',
             }
 
             const url = linkMap[target?.toLowerCase() || ''] || target
@@ -187,12 +195,64 @@ export const commands: CommandSpec[] = [
         handler: async () => ({ type: 'navigate', payload: '/about#pm' })
     },
 
+    // Welcome message
+    {
+        name: 'welcome',
+        aliases: ['intro', 'start'],
+        description: 'Show welcome message',
+        handler: async () => ({
+            type: 'html',
+            payload: `
+        <div class="space-y-3">
+          <div class="font-bold text-green-500">👋 Welcome to DannyOS!</div>
+          <div class="text-sm space-y-2">
+            <div>I'm Danny, a Developer × Project Manager from Mongolia.</div>
+            <div>This is my interactive portfolio. Try these commands:</div>
+            <div class="ml-4 space-y-1">
+              <div><span class="text-blue-400">• help</span> - See all commands</div>
+              <div><span class="text-blue-400">• about</span> - Learn about me</div>
+              <div><span class="text-blue-400">• apps</span> - View my projects</div>
+              <div><span class="text-blue-400">• contact</span> - Get in touch</div>
+              <div><span class="text-blue-400">• dannyexperience</span> - My dev skills</div>
+            </div>
+            <div class="text-xs text-muted-foreground mt-2">
+              💡 Tip: Use Tab for autocomplete, ↑↓ for command history
+            </div>
+          </div>
+        </div>
+      `
+        })
+    },
+
+    // System information
+    {
+        name: 'system',
+        aliases: ['info', 'status'],
+        description: 'Show system information',
+        handler: async () => ({
+            type: 'html',
+            payload: `
+        <div class="space-y-3">
+          <div class="font-bold text-green-500">🖥️ DannyOS System Info</div>
+          <div class="text-sm space-y-1">
+            <div><span class="text-blue-400">OS:</span> DannyOS v1.0.0</div>
+            <div><span class="text-blue-400">Developer:</span> Danny Developer</div>
+            <div><span class="text-blue-400">Role:</span> Developer × Project Manager</div>
+            <div><span class="text-blue-400">Location:</span> Ulaanbaatar, Mongolia</div>
+            <div><span class="text-blue-400">Experience:</span> 5+ years</div>
+            <div><span class="text-blue-400">Status:</span> <span class="text-green-400">● Online</span></div>
+          </div>
+        </div>
+      `
+        })
+    },
+
     // Contact commands
     {
         name: 'contact',
         aliases: ['connect', 'reach', 'dm'],
         description: 'Contact options',
-        usage: 'contact [email|phone|github|instagram|facebook|book] | contact copy <email|phone>',
+        usage: 'contact [email|phone|github|instagram|facebook|xp-ig|xp-fb|book] | contact copy <email|phone>',
         handler: async (args) => {
             const [sub, sub2] = args
 
@@ -209,8 +269,10 @@ export const commands: CommandSpec[] = [
                 email: () => open('mailto:dnioko0412@gmail.com'),
                 phone: () => open('tel:+97680296007'),
                 github: () => open('https://github.com/dnii0412'),
-                instagram: () => open('https://www.instagram.com/xperience.proydrs/'),
-                facebook: () => open('https://www.facebook.com/profile.php?id=61578833769304'),
+                instagram: () => open('https://www.instagram.com/dnii_d/'),
+                facebook: () => open('https://www.facebook.com/dnii.dnii.0412'),
+                'xp-ig': () => open('https://www.instagram.com/xperience.proydrs/'),
+                'xp-fb': () => open('https://www.facebook.com/profile.php?id=61578833769304'),
                 book: () => open(process.env.NEXT_PUBLIC_BOOK_URL || '#')
             }
 
@@ -242,6 +304,8 @@ export const commands: CommandSpec[] = [
               <div><span class="text-blue-400">contact github</span> - Open GitHub profile</div>
               <div><span class="text-blue-400">contact instagram</span> - Open Instagram</div>
               <div><span class="text-blue-400">contact facebook</span> - Open Facebook</div>
+              <div><span class="text-blue-400">contact xp-ig</span> - Xperience Pro Instagram</div>
+              <div><span class="text-blue-400">contact xp-fb</span> - Xperience Pro Facebook</div>
               <div><span class="text-blue-400">contact book</span> - Schedule a call</div>
               <div class="mt-2 text-xs text-muted-foreground">
                 Copy options: <span class="text-blue-400">contact copy email</span> | <span class="text-blue-400">contact copy phone</span>
