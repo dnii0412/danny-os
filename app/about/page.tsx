@@ -41,7 +41,7 @@ export default function AboutPage() {
       <div className="space-y-6">
         <div className="flex items-start gap-6">
           <Avatar className="w-24 h-24">
-            <AvatarImage src="/placeholder.svg?height=96&width=96" alt="Danny" />
+            <AvatarImage src="https://static.thenounproject.com/png/1594252-200.png" alt="Danny" />
             <AvatarFallback className="text-2xl">D</AvatarFallback>
           </Avatar>
 

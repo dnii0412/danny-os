@@ -71,13 +71,13 @@ export function ContactDock() {
         {
             icon: Instagram,
             label: "Instagram",
-            onClick: () => openLink('https://www.instagram.com/dnii_d/', 'Instagram'),
+            onClick: () => openLink('https://www.instagram.com/xperience.proydrs/', 'Instagram'),
             ariaLabel: "Open Instagram profile"
         },
         {
             icon: Facebook,
             label: "Facebook",
-            onClick: () => openLink('https://www.facebook.com/dnii.dnii.0412', 'Facebook'),
+            onClick: () => openLink('https://www.facebook.com/profile.php?id=61578833769304', 'Facebook'),
             ariaLabel: "Open Facebook profile"
         }
     ]

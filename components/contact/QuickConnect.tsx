@@ -64,16 +64,16 @@ export function QuickConnect() {
 
             <ConnectCard
                 title="Instagram"
-                hint="@dnii_d"
+                hint="@xperience.proydrs"
                 icon={Instagram}
-                onClick={() => openLink('https://www.instagram.com/dnii_d/', 'Instagram')}
+                onClick={() => openLink('https://www.instagram.com/xperience.proydrs/', 'Instagram')}
             />
 
             <ConnectCard
                 title="Facebook"
-                hint="dnii.dnii.0412"
+                hint="Xperience Pro"
                 icon={Facebook}
-                onClick={() => openLink('https://www.facebook.com/dnii.dnii.0412', 'Facebook')}
+                onClick={() => openLink('https://www.facebook.com/profile.php?id=61578833769304', 'Facebook')}
             />
 
             {/* Book a Call - only show if booking URL is configured */}

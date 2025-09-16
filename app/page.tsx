@@ -74,6 +74,12 @@ export default function HomePage() {
             </Button>
           </div>
 
+          <div className="text-center mb-4">
+            <p className="text-sm text-white/80 font-medium drop-shadow-lg">
+              💻 Everyone can be a coder — give it a try! Type <span className="font-mono bg-white/20 px-2 py-1 rounded text-xs">help</span> to start
+            </p>
+          </div>
+
           <Card className="p-6 bg-card/80 backdrop-blur-sm" ref={terminalRef}>
             <Terminal />
           </Card>

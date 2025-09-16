@@ -209,8 +209,8 @@ export const commands: CommandSpec[] = [
                 email: () => open('mailto:dnioko0412@gmail.com'),
                 phone: () => open('tel:+97680296007'),
                 github: () => open('https://github.com/dnii0412'),
-                instagram: () => open('https://www.instagram.com/dnii_d/'),
-                facebook: () => open('https://www.facebook.com/dnii.dnii.0412'),
+                instagram: () => open('https://www.instagram.com/xperience.proydrs/'),
+                facebook: () => open('https://www.facebook.com/profile.php?id=61578833769304'),
                 book: () => open(process.env.NEXT_PUBLIC_BOOK_URL || '#')
             }
 
