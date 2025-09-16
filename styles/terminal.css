@@ -1,0 +1,66 @@
+/* Terminal Animated Placeholder Styles */
+
+/* Base text styling */
+.terminal-ph .ph-text {
+  color: var(--fg1);
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Spinner: analog clock with a sweeping hand */
+.terminal-ph .clock {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  flex: 0 0 14px;
+  border-radius: 999px;
+  background: var(--fg1-15);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.terminal-ph .clock::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 999px;
+  mask: conic-gradient(#000 0 1deg, transparent 1deg 360deg);
+  background: var(--accent);
+  transform-origin: 50% 50%;
+  animation: ph-rotate 6s linear infinite;
+}
+
+@keyframes ph-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .terminal-ph .clock::after {
+    animation: none;
+  }
+
+  .terminal-ph .ph-text {
+    transition: none;
+  }
+}
+
+/* Dark mode adjustments for better contrast */
+:root.dark .terminal-ph .ph-text {
+  opacity: 0.8;
+}
+
+:root.light .terminal-ph .ph-text {
+  opacity: 0.7;
+}
+
+/* Focus states */
+.terminal-ph:focus-within .clock {
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+/* Hover effects */
+.terminal-ph:hover .clock {
+  background: var(--accent-20);
+}
