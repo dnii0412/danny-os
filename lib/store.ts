@@ -29,7 +29,7 @@ export const useUIStore = create<UIState>()(
   persist(
     (set, get) => ({
       theme: "system",
-      wallpaper: "moss",
+      wallpaper: "graphite",
       grain: true,
       motion: "auto",
       language: "en",

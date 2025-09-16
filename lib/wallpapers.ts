@@ -49,7 +49,7 @@ export const wallpaperPresets: Record<string, WallpaperPreset> = {
 }
 
 export function getWallpaperStyle(preset: string, grain = true): React.CSSProperties {
-  const wallpaper = wallpaperPresets[preset] || wallpaperPresets.moss
+  const wallpaper = wallpaperPresets[preset] || wallpaperPresets.graphite
 
   return {
     backgroundImage: grain
