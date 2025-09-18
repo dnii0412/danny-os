@@ -52,4 +52,4 @@ It brings together my projects, resume, and skills in one interactive interface.
 ---
 
 ## 📜 License
-MIT License © Danny Developer
+© Danny Developer
