@@ -28,7 +28,10 @@ export default function ContactPage() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Coffee className="w-5 h-5 text-[var(--accent)]" />
+                <Coffee
+                  className="w-5 h-5 text-gray-800 dark:text-[var(--accent)]"
+                  strokeWidth={2}
+                />
                 Availability
               </CardTitle>
             </CardHeader>
@@ -36,7 +39,7 @@ export default function ContactPage() {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-medium">Status</span>
-                  <Badge className="bg-[color-mix(in_oklab,var(--accent)_20%,transparent)] text-[var(--accent)] border-[var(--accent)]/20">
+                  <Badge className="bg-[color-mix(in_oklab,var(--accent)_20%,transparent)] text-gray-800 dark:text-[var(--accent)] border-[var(--accent)]/20">
                     Open to Work
                   </Badge>
                 </div>
@@ -58,7 +61,10 @@ export default function ContactPage() {
 
               <div className="pt-4 border-t border-[var(--line)]">
                 <div className="flex items-start gap-2">
-                  <MapPin className="w-4 h-4 text-[var(--accent)] mt-0.5" />
+                  <MapPin
+                    className="w-4 h-4 text-gray-800 dark:text-[var(--accent)] mt-0.5"
+                    strokeWidth={2}
+                  />
                   <div>
                     <p className="text-sm font-medium">Based in Ulaanbaatar</p>
                     <p className="text-xs text-[var(--fg1)]">
@@ -73,7 +79,10 @@ export default function ContactPage() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Terminal className="w-5 h-5 text-[var(--accent)]" />
+                <Terminal
+                  className="w-5 h-5 text-gray-800 dark:text-[var(--accent)]"
+                  strokeWidth={2}
+                />
                 Terminal Commands
               </CardTitle>
             </CardHeader>

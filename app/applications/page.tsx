@@ -8,7 +8,7 @@ export default function ApplicationsPage() {
       <div className="space-y-6">
         <div>
           <h2 className="text-2xl font-bold mb-2">My Projects</h2>
-          <p className="text-muted-foreground">
+          <p className="text-gray-700 dark:text-muted-foreground">
             A collection of applications and projects I've built with detailed breakdowns
           </p>
         </div>

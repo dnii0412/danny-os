@@ -27,10 +27,10 @@ export default function SystemPage() {
           </div>
           <div>
             <h1 className="text-3xl font-bold mb-2">Danny Developer</h1>
-            <p className="text-lg text-muted-foreground mb-2">
+            <p className="text-lg text-gray-700 dark:text-muted-foreground mb-2">
               Founder, Project Manager & Lead Developer
             </p>
-            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-4 text-sm text-gray-700 dark:text-muted-foreground">
               <div className="flex items-center gap-1">
                 <span>📍</span>
                 <span>Ulaanbaatar, Mongolia</span>
@@ -52,20 +52,20 @@ export default function SystemPage() {
               </div>
               <div className="space-y-3">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Processor:</span>
-                  <span className="font-medium">Full-Stack Development</span>
+                  <span className="text-gray-600 dark:text-muted-foreground">Processor:</span>
+                  <span className="font-medium text-gray-900 dark:text-foreground">Full-Stack Development</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Memory:</span>
-                  <span className="font-medium">4+ years of experience</span>
+                  <span className="text-gray-600 dark:text-muted-foreground">Memory:</span>
+                  <span className="font-medium text-gray-900 dark:text-foreground">4+ years of experience</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Storage:</span>
-                  <span className="font-medium">10+ projects completed</span>
+                  <span className="text-gray-600 dark:text-muted-foreground">Storage:</span>
+                  <span className="font-medium text-gray-900 dark:text-foreground">9+ projects completed</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Uptime:</span>
-                  <span className="font-medium">84.6% availability</span>
+                  <span className="text-gray-600 dark:text-muted-foreground">Uptime:</span>
+                  <span className="font-medium text-gray-900 dark:text-foreground">84.6% availability</span>
                 </div>
               </div>
             </CardContent>
@@ -116,25 +116,25 @@ export default function SystemPage() {
               </div>
               <div className="space-y-3">
                 <div>
-                  <span className="text-muted-foreground text-sm">
+                  <span className="text-gray-600 dark:text-muted-foreground text-sm">
                     Methodology:
                   </span>
                   <div className="mt-1">
-                    <span className="text-sm">WBS, CPM, Agile & Sprint</span>
+                    <span className="text-sm text-gray-900 dark:text-foreground">WBS, CPM, Agile & Sprint</span>
                   </div>
                 </div>
                 <div>
-                  <span className="text-muted-foreground text-sm">Tools:</span>
+                  <span className="text-gray-600 dark:text-muted-foreground text-sm">Tools:</span>
                   <div className="mt-1">
-                    <span className="text-sm">Trello, Notion</span>
+                    <span className="text-sm text-gray-900 dark:text-foreground">Trello, Notion</span>
                   </div>
                 </div>
                 <div>
-                  <span className="text-muted-foreground text-sm">
+                  <span className="text-gray-600 dark:text-muted-foreground text-sm">
                     Team Size:
                   </span>
                   <div className="mt-1">
-                    <span className="text-sm">3-5 people and more</span>
+                    <span className="text-sm text-gray-900 dark:text-foreground">3-5 people and more</span>
                   </div>
                 </div>
               </div>

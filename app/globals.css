@@ -68,7 +68,8 @@
 
 .connect-card:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .connect-card:active {
@@ -242,13 +243,17 @@
   body {
     @apply bg-background text-foreground font-sans;
     /* Updated cursor colors to use new tokens */
-    cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 3L19 16.5L13 17L9 21L5.5 3Z' fill='%23111418'/%3E%3C/svg%3E") 2 2, auto;
+    cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 3L19 16.5L13 17L9 21L5.5 3Z' fill='%23111418'/%3E%3C/svg%3E")
+        2 2,
+      auto;
     font-feature-settings: "cv05", "ss01";
     line-height: 1.5;
   }
 
   .dark body {
-    cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 3L19 16.5L13 17L9 21L5.5 3Z' fill='%23F7F9FB'/%3E%3C/svg%3E") 2 2, auto;
+    cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 3L19 16.5L13 17L9 21L5.5 3Z' fill='%23F7F9FB'/%3E%3C/svg%3E")
+        2 2,
+      auto;
   }
 
   /* Typography scale */
@@ -264,7 +269,6 @@
 
   /* Reduced motion support */
   @media (prefers-reduced-motion: reduce) {
-
     *,
     *::before,
     *::after {
@@ -277,7 +281,6 @@
 
 /* Custom OS animations */
 @keyframes breathe {
-
   0%,
   100% {
     opacity: 0.6;

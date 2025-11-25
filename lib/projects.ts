@@ -23,126 +23,6 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    id: "xp-agency",
-    name: "XP Agency",
-    description: "Freelancing Agency Landing Page",
-    overview:
-      "A modern landing page for our freelancing agency showcasing services, team, and projects. Built with a focus on performance and user experience.",
-    features: [
-      "Service showcase",
-      "Team section",
-      "Project portfolio",
-      "Contact & consultation booking",
-    ],
-    techStack: ["Next.js", "TypeScript", "Vercel", "ReactBits", "shadcn/ui"],
-    challenges: [
-      {
-        challenge: "Modern UI/UX design",
-        solution: "shadcn/ui components with custom styling.",
-      },
-      {
-        challenge: "Performance optimization",
-        solution: "Next.js SSR and Vercel deployment.",
-      },
-    ],
-    teamRoles: [
-      { name: "Danny", role: "Founder, Project Manager, Lead Developer" },
-      { name: "Bayarbayasgalan", role: "Senior Developer, core logic & integrations" },
-    ],
-    meta: {
-      duration: "2 weeks",
-      category: "Web Development",
-      team: "2 developers",
-    },
-    demoUrl: "https://xp-agency.vercel.app",
-  },
-  {
-    id: "sunrise-mongolia",
-    name: "Sunrise Mongolia",
-    description: "Travel Platform",
-    overview:
-      "An innovative travel platform showcasing the best adventures in Mongolia. Provides trip catalogs with filters, media galleries, SEO-optimized pages, and booking request forms.",
-    features: [
-      "Filterable trip catalog",
-      "Media gallery",
-      "SEO-friendly landing pages",
-      "Booking request form",
-      "Admin dashboard for trips, pricing, promotions",
-      "Performance-focused UI",
-    ],
-    techStack: ["Next.js", "TypeScript", "Tailwind", "MongoDB", "Cloudinary", "Vercel"],
-    challenges: [
-      {
-        challenge: "Complex filtering system",
-        solution: "MongoDB aggregation engine.",
-      },
-      {
-        challenge: "Heavy media content",
-        solution: "Cloudinary integration for optimization.",
-      },
-      {
-        challenge: "Flexible admin panel for non-technical users",
-        solution: "Custom CMS-like dashboard.",
-      },
-      {
-        challenge: "High-performance needs",
-        solution: "Next.js optimization & caching.",
-      },
-    ],
-    teamRoles: [
-      { name: "Danny", role: "Founder, Project Manager, Lead Developer" },
-      { name: "Bayarbayasgalan", role: "Senior Developer, core logic & integrations" },
-    ],
-    meta: {
-      duration: "1 month",
-      category: "Web Development",
-      team: "2 developers",
-    },
-    demoUrl: "https://sunrisemongolia.com",
-  },
-  {
-    id: "sengee",
-    name: "Sengee.mn",
-    description: "Forex Trading Education Platform",
-    overview:
-      "Sengee.mn is an online training platform that prepares learners for forex trading from beginner to professional level. This system is designed to provide learners with complete knowledge and practical skills about the forex market. The platform has many functions such as online courses, a lesson library, payment solutions, and a user dashboard, and helps learners develop practical knowledge and skills in forex trading strategies, technical analysis, and risk management.",
-    features: [
-      "Admin panel (Manage course fund, payment information)",
-      "Payment solution",
-      "User section",
-      "User registration",
-    ],
-    techStack: ["Next.js", "TypeScript", "Tailwind", "MongoDB", "Cloudinary", "NextAuth", "Bunny.net"],
-    challenges: [
-      {
-        challenge: "Course content management",
-        solution: "Admin dashboard for managing courses and lesson library.",
-      },
-      {
-        challenge: "Payment integration",
-        solution: "Secure payment solution implementation.",
-      },
-      {
-        challenge: "User access control",
-        solution: "Role-based authentication with NextAuth.",
-      },
-      {
-        challenge: "Educational content delivery",
-        solution: "Structured course system with progress tracking.",
-      },
-    ],
-    teamRoles: [
-      { name: "Danny", role: "Founder, Project Manager, Lead Developer" },
-      { name: "Bayarbayasgalan", role: "Senior Developer, core logic & integrations" },
-    ],
-    meta: {
-      duration: "3 weeks",
-      category: "Web Development",
-      team: "2 developers",
-    },
-    demoUrl: "https://sengee.mn",
-  },
-  {
     id: "xperience",
     name: "Xperience",
     description: "Internship & Job Hub",
@@ -188,6 +68,50 @@ export const PROJECTS: Project[] = [
       team: "2 Developers • Owned by XP Digital",
     },
     demoUrl: "https://experience.mn",
+  },
+  {
+    id: "sunrise-mongolia",
+    name: "Sunrise Mongolia",
+    description: "Travel Platform",
+    overview:
+      "An innovative travel platform showcasing the best adventures in Mongolia. Provides trip catalogs with filters, media galleries, SEO-optimized pages, and booking request forms.",
+    features: [
+      "Filterable trip catalog",
+      "Media gallery",
+      "SEO-friendly landing pages",
+      "Booking request form",
+      "Admin dashboard for trips, pricing, promotions",
+      "Performance-focused UI",
+    ],
+    techStack: ["Next.js", "TypeScript", "Tailwind", "MongoDB", "Cloudinary", "Vercel"],
+    challenges: [
+      {
+        challenge: "Complex filtering system",
+        solution: "MongoDB aggregation engine.",
+      },
+      {
+        challenge: "Heavy media content",
+        solution: "Cloudinary integration for optimization.",
+      },
+      {
+        challenge: "Flexible admin panel for non-technical users",
+        solution: "Custom CMS-like dashboard.",
+      },
+      {
+        challenge: "High-performance needs",
+        solution: "Next.js optimization & caching.",
+      },
+    ],
+    teamRoles: [
+      { name: "Danny", role: "Founder, Project Manager, Lead Developer" },
+      { name: "Bayarbayasgalan", role: "Senior Developer, core logic & integrations" },
+    ],
+    meta: {
+      duration: "1 month",
+      category: "Web Development",
+      team: "2 developers",
+    },
+    demoUrl: "https://sunrisemongolia.com",
   },
   {
     id: "winacademy",
@@ -249,52 +173,6 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://winacademy.mn",
   },
   {
-    id: "han-education",
-    name: "Han Education",
-    description: "Study Abroad Platform",
-    overview:
-      "Helps students apply to Chinese universities & scholarships. Guides applicants step by step with documentation support and enables consultants to connect directly with students.",
-    features: [
-      "Student data collection",
-      "Editable CMS for consultants",
-      "Multi-language support",
-      "SEO optimization",
-      "Role-based admin access",
-      "Direct communication with consultants",
-      "Application documentation guidance",
-      "Step-by-step process tracking",
-    ],
-    techStack: ["Next.js", "TypeScript", "Tailwind", "MongoDB", "NextAuth", "Cloudinary", "Vercel"],
-    challenges: [
-      {
-        challenge: "Complex application processes",
-        solution: "Built guided form workflows.",
-      },
-      {
-        challenge: "Fast communication",
-        solution: "Admin & consultant dashboards.",
-      },
-      {
-        challenge: "Data security",
-        solution: "Encrypted storage and NextAuth authentication.",
-      },
-      {
-        challenge: "Multi-language support",
-        solution: "i18n integration.",
-      },
-    ],
-    teamRoles: [
-      { name: "Danny", role: "Founder, Project Manager, Lead Developer" },
-      { name: "Bayarbayasgalan", role: "Senior Developer, core logic & integrations" },
-    ],
-    meta: {
-      duration: "1 month",
-      category: "Web Development",
-      team: "2 developers",
-    },
-    demoUrl: "https://haneducation.mn",
-  },
-  {
     id: "new-era",
     name: "New Era",
     description: "Education Platform",
@@ -341,59 +219,49 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://edunewera.mn",
   },
   {
-    id: "apple-clone",
-    name: "Apple Clone",
-    description: "Practice Project",
+    id: "han-education",
+    name: "Han Education",
+    description: "Study Abroad Platform",
     overview:
-      "A practice project recreating Apple's website design and layout to improve frontend development skills.",
+      "Helps students apply to Chinese universities & scholarships. Guides applicants step by step with documentation support and enables consultants to connect directly with students.",
     features: [
-      "Responsive design",
-      "Product showcase",
-      "Navigation menu",
+      "Student data collection",
+      "Editable CMS for consultants",
+      "Multi-language support",
+      "SEO optimization",
+      "Role-based admin access",
+      "Direct communication with consultants",
+      "Application documentation guidance",
+      "Step-by-step process tracking",
     ],
-    techStack: ["HTML", "CSS", "JavaScript", "Vercel"],
+    techStack: ["Next.js", "TypeScript", "Tailwind", "MongoDB", "NextAuth", "Cloudinary", "Vercel"],
     challenges: [
       {
-        challenge: "Recreating Apple's design",
-        solution: "Careful attention to detail and responsive layouts.",
+        challenge: "Complex application processes",
+        solution: "Built guided form workflows.",
+      },
+      {
+        challenge: "Fast communication",
+        solution: "Admin & consultant dashboards.",
+      },
+      {
+        challenge: "Data security",
+        solution: "Encrypted storage and NextAuth authentication.",
+      },
+      {
+        challenge: "Multi-language support",
+        solution: "i18n integration.",
       },
     ],
     teamRoles: [
-      { name: "Danny", role: "Solo developer - practice project" },
+      { name: "Danny", role: "Founder, Project Manager, Lead Developer" },
+      { name: "Bayarbayasgalan", role: "Senior Developer, core logic & integrations" },
     ],
     meta: {
-      duration: "1 week",
-      category: "Practice Project",
-      team: "Solo",
+      duration: "1 month",
+      category: "Web Development",
+      team: "2 developers",
     },
-    demoUrl: "https://apple-clone-danny.vercel.app",
-  },
-  {
-    id: "pine-tour",
-    name: "Pine Tour",
-    description: "Practice Project",
-    overview:
-      "A practice project building a travel agency landing page for Mongolia tours to practice modern web development.",
-    features: [
-      "Destination showcase",
-      "Package pricing",
-      "Responsive design",
-    ],
-    techStack: ["HTML", "CSS", "JavaScript", "Vercel"],
-    challenges: [
-      {
-        challenge: "Building a modern travel site",
-        solution: "Focus on clean UI and user experience.",
-      },
-    ],
-    teamRoles: [
-      { name: "Danny", role: "Solo developer - practice project" },
-    ],
-    meta: {
-      duration: "1 week",
-      category: "Practice Project",
-      team: "Solo",
-    },
-    demoUrl: "https://pinetourdanny.vercel.app",
+    demoUrl: "https://haneducation.mn",
   },
 ]

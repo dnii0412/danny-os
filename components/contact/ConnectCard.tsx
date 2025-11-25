@@ -2,7 +2,6 @@
 
 import { LucideIcon, CheckCircle2 } from "lucide-react"
 import { useState } from "react"
-import { toast } from "sonner"
 import { motion, AnimatePresence } from "framer-motion"
 
 interface ConnectCardProps {
@@ -10,7 +9,7 @@ interface ConnectCardProps {
     title: string
     hint: string
     onClick: () => void
-    onAux?: () => void
+    onAux?: () => void | Promise<void>
     auxLabel?: string
 }
 
@@ -39,8 +38,6 @@ export function ConnectCard({
             setIsAnimating(true)
             await onAux()
             setIsCopied(true)
-            
-            // Reset after 2 seconds
             setTimeout(() => {
                 setIsCopied(false)
                 setIsAnimating(false)
@@ -61,7 +58,7 @@ export function ConnectCard({
             aria-label={`${title}: ${hint}`}
         >
             <div className="flex items-center gap-3">
-                <Icon className="h-6 w-6 text-[var(--accent)] flex-shrink-0" />
+                <Icon className="h-6 w-6 text-gray-800 dark:text-[var(--accent)] flex-shrink-0" strokeWidth={2} />
                 <div className="flex-1 min-w-0">
                     <div className="text-[var(--fg0)] font-medium truncate">{title}</div>
                     <div className="text-sm text-[var(--fg1)] truncate">{hint}</div>
@@ -70,39 +67,13 @@ export function ConnectCard({
             </div>
 
             {onAux && (
-                <motion.button
-                    className="absolute right-3 bottom-3 text-xs underline text-[var(--fg1)] hover:text-[var(--fg0)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-offset-2 focus:ring-offset-[var(--bg-1)] rounded px-1 flex items-center gap-1 min-w-[40px] justify-end"
+                <button
+                    className="absolute right-3 bottom-3 text-xs underline text-[var(--fg1)] hover:text-[var(--fg0)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-offset-2 focus:ring-offset-[var(--bg-1)] rounded px-1"
                     onClick={handleAuxClick}
                     aria-label={`Copy ${title} information`}
-                    whileTap={{ scale: 0.9 }}
-                    animate={isAnimating ? { scale: [1, 1.1, 1] } : {}}
-                    transition={{ duration: 0.3 }}
                 >
-                    <AnimatePresence mode="wait">
-                        {isCopied ? (
-                            <motion.span
-                                key="copied"
-                                initial={{ opacity: 0, y: -5 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: 5 }}
-                                transition={{ duration: 0.2 }}
-                                className="flex items-center gap-1 text-green-500"
-                            >
-                                <CheckCircle2 className="w-3 h-3" />
-                                <span>Copied</span>
-                            </motion.span>
-                        ) : (
-                            <motion.span
-                                key="copy"
-                                initial={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.1 }}
-                            >
-                                {auxLabel}
-                            </motion.span>
-                        )}
-                    </AnimatePresence>
-                </motion.button>
+                    {auxLabel}
+                </button>
             )}
         </div>
     )

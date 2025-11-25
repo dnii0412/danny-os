@@ -51,7 +51,7 @@ export function ContactLinks({ className }: ContactLinksProps) {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "danny-otgontsetseg",
+      value: "Danny Otgontsetseg",
       href: "https://www.linkedin.com/in/danny-otgontsetseg-baaa67260/",
     },
   ]
@@ -69,10 +69,10 @@ export function ContactLinks({ className }: ContactLinksProps) {
               rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors group"
             >
-              <Icon className="w-5 h-5 text-emerald-600 group-hover:text-emerald-700" />
+              <Icon className="w-5 h-5 text-gray-800 dark:text-emerald-600 group-hover:text-gray-900 dark:group-hover:text-emerald-700" strokeWidth={2} />
               <div>
-                <div className="font-medium">{link.label}</div>
-                <div className="text-sm text-muted-foreground">{link.value}</div>
+                <div className="font-medium text-gray-900 dark:text-foreground">{link.label}</div>
+                <div className="text-sm text-gray-700 dark:text-muted-foreground">{link.value}</div>
               </div>
             </a>
           )

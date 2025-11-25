@@ -32,8 +32,12 @@ export function QuickConnect() {
         window.location.href = 'tel:+97680296007'
     }
 
-    const copyEmail = async () => await copyToClipboard('danny.otgontsetseg@gmali.com', 'email')
-    const copyPhone = async () => await copyToClipboard('+976 80296007', 'phone number')
+    const copyEmail = async () => {
+        await copyToClipboard('danny.otgontsetseg@gmali.com', 'email')
+    }
+    const copyPhone = async () => {
+        await copyToClipboard('+976 80296007', 'phone number')
+    }
 
     return (
         <section className="grid gap-4 sm:grid-cols-2">

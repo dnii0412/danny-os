@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils"
 const dockItems = [
   { icon: Home, label: "Home", path: "/" },
   { icon: Folder, label: "Applications", path: "/applications" },
-  { icon: User, label: "System Info", path: "/about" },
+  { icon: User, label: "System Info", path: "/system" },
   { icon: FileText, label: "Documents", path: "/resume" },
   { icon: MessageCircle, label: "Messaging", path: "/contact" },
   { icon: Settings, label: "Settings", path: "/settings" },
@@ -44,7 +44,7 @@ export function Dock() {
                       isActive && "bg-primary text-primary-foreground shadow-md scale-105",
                     )}
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-5 h-5 text-white/80 dark:text-white/80" strokeWidth={2} />
                     <span className="sr-only">{item.label}</span>
                   </Button>
                 </TooltipTrigger>

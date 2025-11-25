@@ -137,10 +137,10 @@ Other: Team Leadership, Audio Engineering
             <div className="space-y-8">
               <div className="text-center">
                 <h1 className="text-3xl font-bold mb-2">Danny Developer</h1>
-                <p className="text-lg text-muted-foreground mb-4">
+                <p className="text-lg text-gray-700 dark:text-muted-foreground mb-4">
                   Founder, Project Manager & Developer
                 </p>
-                <div className="flex justify-center gap-4 text-sm">
+                <div className="flex justify-center gap-4 text-sm text-gray-700 dark:text-muted-foreground">
                   <span>danny.otgontsetseg@gmail.com</span>
                   <span>•</span>
                   <span>Ulaanbaatar, Mongolia</span>
@@ -159,15 +159,15 @@ Other: Team Leadership, Audio Engineering
                         <h4 className="font-medium">
                           Founder, Project Manager & Developer
                         </h4>
-                        <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-md border border-primary/20">
+                        <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-gray-100 dark:bg-primary/10 text-gray-800 dark:text-primary rounded-md border border-gray-300 dark:border-primary/20">
                           XP Digital
                         </span>
                       </div>
-                      <span className="text-sm text-muted-foreground">
+                      <span className="text-sm text-gray-700 dark:text-muted-foreground">
                         July 2025 – Present
                       </span>
                     </div>
-                    <ul className="text-sm text-muted-foreground space-y-1 ml-4">
+                    <ul className="text-sm text-gray-700 dark:text-muted-foreground space-y-1 ml-4">
                       <li>
                         • Founded XP Digital, a freelance web development agency
                       </li>
@@ -203,15 +203,15 @@ Other: Team Leadership, Audio Engineering
                     <div className="flex justify-between items-start mb-2">
                       <div className="flex items-center gap-2 flex-wrap">
                         <h4 className="font-medium">Full-Stack Developer</h4>
-                        <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-md border border-primary/20">
+                        <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-gray-100 dark:bg-primary/10 text-gray-800 dark:text-primary rounded-md border border-gray-300 dark:border-primary/20">
                           Honest Media Consulting
                         </span>
                       </div>
-                      <span className="text-sm text-muted-foreground">
+                      <span className="text-sm text-gray-700 dark:text-muted-foreground">
                         2023 – 2024
                       </span>
                     </div>
-                    <ul className="text-sm text-muted-foreground space-y-1 ml-4">
+                    <ul className="text-sm text-gray-700 dark:text-muted-foreground space-y-1 ml-4">
                       <li>
                         • Developed and maintained company websites using React,
                         Firebase, Next.js, TypeScript, Tailwind
@@ -233,15 +233,15 @@ Other: Team Leadership, Audio Engineering
                         <h4 className="font-medium">
                           Technician, Sound Engineer & Drummer
                         </h4>
-                        <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-md border border-primary/20">
+                        <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-gray-100 dark:bg-primary/10 text-gray-800 dark:text-primary rounded-md border border-gray-300 dark:border-primary/20">
                           First Church
                         </span>
                       </div>
-                      <span className="text-sm text-muted-foreground">
+                      <span className="text-sm text-gray-700 dark:text-muted-foreground">
                         2021 – Present
                       </span>
                     </div>
-                    <ul className="text-sm text-muted-foreground space-y-1 ml-4">
+                    <ul className="text-sm text-gray-700 dark:text-muted-foreground space-y-1 ml-4">
                       <li>
                         • Volunteered as technician, sound engineer, and drummer
                       </li>
@@ -265,26 +265,28 @@ Other: Team Leadership, Audio Engineering
                   <div className="flex justify-between items-start">
                     <div className="flex items-center gap-2 flex-wrap">
                       <h4 className="font-medium">High School Graduate</h4>
-                      <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-md border border-primary/20">
+                      <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-gray-100 dark:bg-primary/10 text-gray-800 dark:text-primary rounded-md border border-gray-300 dark:border-primary/20">
                         Amjilt Cyber School
                       </span>
                     </div>
-                    <span className="text-sm text-muted-foreground">2025</span>
+                    <span className="text-sm text-gray-700 dark:text-muted-foreground">
+                      2025
+                    </span>
                   </div>
 
                   <div className="border-t border-border/30 pt-4">
                     <div className="flex justify-between items-start mb-3">
                       <div className="flex items-center gap-2 flex-wrap">
                         <h4 className="font-medium">Student</h4>
-                        <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-md border border-primary/20">
+                        <span className="inline-block px-2.5 py-1 text-xs font-semibold bg-gray-100 dark:bg-primary/10 text-gray-800 dark:text-primary rounded-md border border-gray-300 dark:border-primary/20">
                           Pinecone Academy
                         </span>
                       </div>
-                      <span className="text-sm text-muted-foreground">
-                        October 2025 – June 2026
+                      <span className="text-sm text-gray-700 dark:text-muted-foreground">
+                        October 2024 – June 2025
                       </span>
                     </div>
-                    <div className="text-sm text-muted-foreground space-y-2">
+                    <div className="text-sm text-gray-700 dark:text-muted-foreground space-y-2">
                       <p>
                         • Currently studying at Pinecone Academy as a Software
                         Engineering Student
@@ -300,7 +302,7 @@ Other: Team Leadership, Audio Engineering
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-sm">
                   <div className="space-y-3">
                     <h4 className="font-medium mb-2">Frontend</h4>
-                    <ul className="text-muted-foreground space-y-1">
+                    <ul className="text-gray-700 dark:text-muted-foreground space-y-1">
                       <li>Next.js</li>
                       <li>React</li>
                       <li>TypeScript</li>
@@ -310,7 +312,7 @@ Other: Team Leadership, Audio Engineering
 
                   <div className="space-y-3">
                     <h4 className="font-medium mb-2">Backend</h4>
-                    <ul className="text-muted-foreground space-y-1">
+                    <ul className="text-gray-700 dark:text-muted-foreground space-y-1">
                       <li>Node.js</li>
                       <li>Express</li>
                       <li>MongoDB</li>
@@ -319,7 +321,7 @@ Other: Team Leadership, Audio Engineering
 
                   <div className="space-y-3">
                     <h4 className="font-medium mb-2">Tools & Infra</h4>
-                    <ul className="text-muted-foreground space-y-1">
+                    <ul className="text-gray-700 dark:text-muted-foreground space-y-1">
                       <li>Vercel</li>
                       <li>Firebase</li>
                       <li>Bunny.net (TUS)</li>
@@ -332,7 +334,7 @@ Other: Team Leadership, Audio Engineering
 
                   <div className="space-y-3">
                     <h4 className="font-medium mb-2">Project Management</h4>
-                    <ul className="text-muted-foreground space-y-1">
+                    <ul className="text-gray-700 dark:text-muted-foreground space-y-1">
                       <li>Trello</li>
                       <li>Notion</li>
                     </ul>
@@ -340,7 +342,7 @@ Other: Team Leadership, Audio Engineering
 
                   <div className="space-y-3">
                     <h4 className="font-medium mb-2">Methodologies</h4>
-                    <ul className="text-muted-foreground space-y-1">
+                    <ul className="text-gray-700 dark:text-muted-foreground space-y-1">
                       <li>Agile</li>
                       <li>Sprints</li>
                       <li>Risk Management</li>
@@ -351,11 +353,34 @@ Other: Team Leadership, Audio Engineering
 
                   <div className="space-y-3">
                     <h4 className="font-medium mb-2">Other</h4>
-                    <ul className="text-muted-foreground space-y-1">
+                    <ul className="text-gray-700 dark:text-muted-foreground space-y-1">
                       <li>Team Leadership</li>
                       <li>Audio Engineering</li>
                       <li>Drummer in Church Band</li>
                     </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="border-t border-border mb-6"></div>
+                <h3 className="text-xl font-semibold mb-3">Core Values</h3>
+                <div className="text-sm text-muted-foreground space-y-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-[var(--accent)] rounded-full"></div>
+                    <p>Continuous learning</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-[var(--accent)] rounded-full"></div>
+                    <p>Collaborative spirit</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-[var(--accent)] rounded-full"></div>
+                    <p>Building with trust & love</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-[var(--accent)] rounded-full"></div>
+                    <p>Passionate & reliable</p>
                   </div>
                 </div>
               </div>

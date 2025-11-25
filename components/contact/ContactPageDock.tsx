@@ -63,9 +63,6 @@ export function ContactPageDock() {
       onClick: () => openLink('https://www.instagram.com/dnii_d/', 'Instagram'),
       ariaLabel: "Open Instagram profile"
     },
-  ]
-
-  const dockItemsAfter = [
     {
       icon: Github,
       label: "GitHub",
@@ -95,7 +92,7 @@ export function ContactPageDock() {
                     onClick={item.onClick}
                     className="w-10 h-10 p-0 transition-all duration-200 hover:scale-110"
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-5 h-5 text-gray-800 dark:text-white" strokeWidth={2} />
                     <span className="sr-only">{item.ariaLabel}</span>
                   </Button>
                 </TooltipTrigger>
@@ -140,7 +137,7 @@ export function ContactPageDock() {
                         transition={{ duration: 0.2 }}
                         className="absolute inset-0 flex items-center justify-center"
                       >
-                        <Mail className="w-5 h-5" />
+                        <Mail className="w-5 h-5 text-gray-800 dark:text-white" strokeWidth={2} />
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -152,28 +149,6 @@ export function ContactPageDock() {
               <p>{emailCopied ? "Copied!" : "Copy Email"}</p>
             </TooltipContent>
           </Tooltip>
-
-          {dockItemsAfter.map((item) => {
-            const Icon = item.icon
-            return (
-              <Tooltip key={item.label}>
-                <TooltipTrigger asChild>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={item.onClick}
-                    className="w-10 h-10 p-0 transition-all duration-200 hover:scale-110"
-                  >
-                    <Icon className="w-5 h-5" />
-                    <span className="sr-only">{item.ariaLabel}</span>
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent side="top">
-                  <p>{item.label}</p>
-                </TooltipContent>
-              </Tooltip>
-            )
-          })}
         </TooltipProvider>
       </div>
     </div>
