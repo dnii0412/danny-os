@@ -86,11 +86,11 @@ export function ContactDock() {
             {
                 icon: Mail,
                 label: "Email",
-                onClick: () => window.location.href = 'mailto:dnioko0412@gmail.com',
-                ariaLabel: "Send email to dnioko0412@gmail.com",
+                onClick: () => window.location.href = 'mailto:danny.otgontsetseg@gmali.com',
+                ariaLabel: "Send email to danny.otgontsetseg@gmali.com",
                 showEmail: true,
-                email: "dnioko0412@gmail.com",
-                onCopy: () => copyToClipboard('dnioko0412@gmail.com', 'email address')
+                email: "danny.otgontsetseg@gmali.com",
+                onCopy: () => copyToClipboard('danny.otgontsetseg@gmali.com', 'email address')
             },
             {
                 icon: Phone,
@@ -118,15 +118,15 @@ export function ContactDock() {
             },
             {
                 icon: Instagram,
-                label: "Xperience Pro",
-                onClick: () => openLink('https://www.instagram.com/xperience.proydrs/', 'Xperience Pro Instagram'),
-                ariaLabel: "Open Xperience Pro Instagram"
+                label: "Xperience Agency (Instagram)",
+                onClick: () => openLink('https://www.instagram.com/xperience.proydrs/', 'Xperience Agency Instagram'),
+                ariaLabel: "Open Xperience Agency Instagram"
             },
             {
                 icon: Facebook,
-                label: "Xperience Pro",
-                onClick: () => openLink('https://www.facebook.com/profile.php?id=61578833769304', 'Xperience Pro Facebook'),
-                ariaLabel: "Open Xperience Pro Facebook"
+                label: "Xperience Agency (Facebook)",
+                onClick: () => openLink('https://www.facebook.com/profile.php?id=61578833769304', 'Xperience Agency Facebook'),
+                ariaLabel: "Open Xperience Agency Facebook"
             }
         ]
 

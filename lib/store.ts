@@ -28,13 +28,13 @@ export interface UIState {
 export const useUIStore = create<UIState>()(
   persist(
     (set, get) => ({
-      theme: "system",
+      theme: "dark",
       wallpaper: "graphite",
       grain: true,
       motion: "auto",
       language: "en",
       sounds: false,
-      effectiveTheme: "light",
+      effectiveTheme: "dark",
       presence: { onlineCount: 1, enabled: false },
       badges: [],
       currentWindow: null,

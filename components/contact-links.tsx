@@ -1,4 +1,4 @@
-import { Mail, Phone, Github, Instagram, Facebook } from "lucide-react"
+import { Mail, Phone, Github, Instagram, Facebook, Linkedin } from "lucide-react"
 
 interface ContactLinksProps {
   className?: string
@@ -9,8 +9,8 @@ export function ContactLinks({ className }: ContactLinksProps) {
     {
       icon: Mail,
       label: "Email",
-      value: "dnioko0412@gmail.com",
-      href: "mailto:dnioko0412@gmail.com",
+      value: "danny.otgontsetseg@gmali.com",
+      href: "mailto:danny.otgontsetseg@gmali.com",
     },
     {
       icon: Phone,
@@ -38,15 +38,21 @@ export function ContactLinks({ className }: ContactLinksProps) {
     },
     {
       icon: Instagram,
-      label: "Xperience Pro (IG)",
+      label: "Xperience Agency (Instagram)",
       value: "@xperience.proydrs",
       href: "https://www.instagram.com/xperience.proydrs/",
     },
     {
       icon: Facebook,
-      label: "Xperience Pro (FB)",
-      value: "Xperience Pro",
+      label: "Xperience Agency (Facebook)",
+      value: "XP Digital",
       href: "https://www.facebook.com/profile.php?id=61578833769304",
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      value: "danny-otgontsetseg",
+      href: "https://www.linkedin.com/in/danny-otgontsetseg-baaa67260/",
     },
   ]
 

@@ -197,7 +197,7 @@ export default function AboutPage() {
           </CardContent>
         </Card>
 
-        <div className="text-center text-sm text-muted-foreground">
+        <div className="text-center text-sm text-muted-foreground pb-24 relative z-10">
           <p>From herding cows in Mongolia to crafting digital experiences</p>
           <p>Every line of code written with purpose and care</p>
         </div>

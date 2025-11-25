@@ -25,21 +25,21 @@ export function QuickConnect() {
     }
 
     const openMail = () => {
-        window.location.href = 'mailto:dnioko0412@gmail.com'
+        window.location.href = 'mailto:danny.otgontsetseg@gmali.com'
     }
 
     const openPhone = () => {
         window.location.href = 'tel:+97680296007'
     }
 
-    const copyEmail = () => copyToClipboard('dnioko0412@gmail.com', 'email')
-    const copyPhone = () => copyToClipboard('+976 80296007', 'phone number')
+    const copyEmail = async () => await copyToClipboard('danny.otgontsetseg@gmali.com', 'email')
+    const copyPhone = async () => await copyToClipboard('+976 80296007', 'phone number')
 
     return (
         <section className="grid gap-4 sm:grid-cols-2">
             <ConnectCard
                 title="Email"
-                hint="dnioko0412@gmail.com"
+                hint="danny.otgontsetseg@gmali.com"
                 icon={Mail}
                 onClick={openMail}
                 onAux={copyEmail}
@@ -77,17 +77,17 @@ export function QuickConnect() {
             />
 
             <ConnectCard
-                title="Xperience Pro (IG)"
+                title="Xperience Agency (Instagram)"
                 hint="@xperience.proydrs"
                 icon={Instagram}
-                onClick={() => openLink('https://www.instagram.com/xperience.proydrs/', 'Xperience Pro Instagram')}
+                onClick={() => openLink('https://www.instagram.com/xperience.proydrs/', 'Xperience Agency Instagram')}
             />
 
             <ConnectCard
-                title="Xperience Pro (FB)"
-                hint="Xperience Pro"
+                title="Xperience Agency (Facebook)"
+                hint="XP Digital"
                 icon={Facebook}
-                onClick={() => openLink('https://www.facebook.com/profile.php?id=61578833769304', 'Xperience Pro Facebook')}
+                onClick={() => openLink('https://www.facebook.com/profile.php?id=61578833769304', 'Xperience Agency Facebook')}
             />
 
             {/* Book a Call - only show if booking URL is configured */}

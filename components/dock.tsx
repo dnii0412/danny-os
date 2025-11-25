@@ -19,6 +19,11 @@ export function Dock() {
   const router = useRouter()
   const pathname = usePathname()
 
+  // Hide dock on contact page
+  if (pathname === "/contact") {
+    return null
+  }
+
   return (
     <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
       <div className="flex items-center gap-2 px-4 py-3 bg-card/80 backdrop-blur-md border border-border rounded-xl shadow-lg">
